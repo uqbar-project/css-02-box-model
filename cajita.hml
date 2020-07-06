@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cajita</title>
+
+  <link rel="stylesheet" href="cajita.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="cajita">
+      Acá estoy muy bien!
+    </div>
+  </div>
+</body>
+
+</html>
