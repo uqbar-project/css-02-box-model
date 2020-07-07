@@ -178,12 +178,29 @@ esto produce que no haya separación de las tarjetas, lo que visualmente produce
 
 ![several articles 2](./images/severalArticles2.png)
 
+Podemos con un ajuste más centrar las reseñas horizontalmente:
+
+```css
+section.container {
+  margin: 20px auto;  /* 20 píxeles para márgenes arriba y abajo, centrado a izquierda y derecha
+}
+```
+
+Lamentablemente esta misma técnica no funciona para el centrado vertical.
+
 Nos queda para ejemplos posteriores
 
 - que el layout aproveche más la organización espacial de la página
 - dejar de pensar en valores absolutos (píxeles) y usar valores relativos
 
-TODO: Leer el último artículo padding vs. margin y ver si hace falta aclarar algo.
+## Resumen: ¿por qué es importante entender el Box Model?
+
+- Porque una página web puede pensarse como un conjunto de cajas, aun cuando no las visualicemos como tales.
+- La semántica de una página tiene que ver con la organización espacial de los elementos, y la importancia del espacio sin usar es equivalente a la importancia que tiene el silencio en la música.
+- La propiedad `margin` puede ser negativa y desplazar un elemento por fuera de su contenedor principal, o bien `margin: auto` permite centrar horizontalmente un elemento en su contenedor
+- La diferencia entre padding y margin es cuestión de límites
+  - el _padding_ se usa dentro del contenido y queremos separarlo de su contorno (ya sea porque tenemos bordes visibles o un color de fondo diferente, como en el caso de la cajita)
+  - el _margin_ permite definir separaciones entre varios elementos
 
 ## Artículos de interés
 
