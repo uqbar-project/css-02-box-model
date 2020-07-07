@@ -1,6 +1,6 @@
 ## El modelo de cajas
 
-Una cuestión fundamental a la hora de maquetar una página web es entender el manejo espacial de nuestra página. Cada elemento define un _layout_ que puede verse gráficamente de la siguiente manera:
+Una cuestión fundamental a la hora de maquetar una página web es entender su manejo espacial. Cada elemento define un _layout_ que puede verse gráficamente de la siguiente manera:
 
 ![layout base](./images/boxModel.png)
 
@@ -90,9 +90,9 @@ Eso produce que se visualice la barra de scroll, no importa cuánto la extendamo
 
 Si nuestro div tuviera un height del 100%, lo mismo nos ocurriría con los scrollbars verticales.
 
-## Box Sizing del Internet Explorer
+## Box Sizing alternativo
 
-En el mismo gif habrán notado que con una configuración se arreglan las molestas barras de desplazamiento:
+En el mismo gif habrán notado que con la siguiente configuración se arreglan las molestas barras de desplazamiento:
 
 ```css
 .container {
@@ -117,9 +117,82 @@ Por eso cuando nosotros decimos que debe tomar el 100% del width, definirle bord
 
 (recordemos que cuando configuramos margin con dos valores, el primero es el vertical y el segundo es el horizontal, con iguales valores para cada extremo)
 
-## Artículos de interés
+Si te interesa conocer un poco acerca de cómo surgió el box sizing (un bug/feature de Internet Explorer) te recomendamos que leas [este artículo](https://css-tricks.com/box-sizing/).
 
-https://www.loom.com/share/b3dd43295fff4c23b30adbea4095f26c
+## Segundo ejemplo
+
+Veamos el segundo ejemplo, que podés encontrar en el archivo `articulo.html`, y que nos va a servir para entender cómo diferenciar
+
+- el padding
+- el border
+- el margin
+
+yendo de adentro hacia afuera.
+
+### Necesito espacio
+
+![article](./images/article1.png)
+
+No se ve mal, tenemos un border sólido de 1px. Probemos primero definir un padding de 20px para el título y la caja:
+
+```css
+.cajita {
+  ...
+  padding: 20px;
+}
+
+.titulo {
+  ...
+  padding: 20px;
+}
+```
+
+Esto ya produce cambios en la visualización:
+
+![article -> padding](./images/article2.png)
+
+### Múltiples cajitas
+
+En el archivo `muchosArticulos.html` tenemos varias cajitas con el mismo css que acabamos de generar:
+
+![muchos artículos inicial](./images/severalArticles1.png)
+
+Ok, eso no se ve bien, tomaremos todo el height necesario para que nos entre toda la explicación de cada capítulo:
+
+```css
+.container {
+  ...
+  height: 100%;
+}
+```
+
+Ahora sí:
+
+![muchos artículos ok](./images/severalArticles3.png)
+
+Y un detalle importante, el margin nos permite que no se encimen todas las cards. Si comentamos los márgenes para `section` y `section.container`
+
+```css
+section {
+  /* margin: 10px 0px; */
+}
+
+section.container {
+  /* margin: 20px; */
+}
+```
+
+esto produce que no haya separación de las tarjetas, lo que visualmente produce que el usuario tenga que esforzarse para detectar título y contenido de cada capítulo:
+
+![several articles 2](./images/severalArticles2.png)
+
+Nos queda para ejemplos posteriores
+
+- que el layout aproveche más la organización espacial de la página
+- dejar de pensar en valores absolutos (píxeles) y usar valores relativos
+
+
+## Artículos de interés
 
 - [What is wrong with the CSS Box Model, and how to fix it](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
 - [The CSS Default Box Model is Utter Madness: A Parable | Press Up](https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/)
