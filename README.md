@@ -119,19 +119,11 @@ Por eso cuando nosotros decimos que debe tomar el 100% del width, definirle bord
 
 Si te interesa conocer un poco acerca de cómo surgió el box sizing (un bug/feature de Internet Explorer) te recomendamos que leas [este artículo](https://css-tricks.com/box-sizing/).
 
-## Segundo ejemplo
+## Manejo del padding en un artículo
 
-Veamos el segundo ejemplo, que podés encontrar en el archivo `articulo.html`, y que nos va a servir para entender cómo diferenciar
+Vamos al archivo `articulo.html`, donde jugaremos un poco con el padding para mejorar la visualización de un elemento.
 
-- el padding
-- el border
-- el margin
-
-yendo de adentro hacia afuera.
-
-### Necesito espacio
-
-![article](./images/article1.png)
+![article](./images/articleInitial.png)
 
 No se ve mal, tenemos un border sólido de 1px. Probemos primero definir un padding de 20px para el título y la caja:
 
@@ -151,9 +143,9 @@ Esto ya produce cambios en la visualización:
 
 ![article -> padding](./images/article2.png)
 
-### Múltiples cajitas
+### Margin para separar múltiples cajitas
 
-En el archivo `muchosArticulos.html` tenemos varias cajitas con el mismo css que acabamos de generar:
+En el archivo `muchosArticulos.html` tenemos varias reseñas de capítulos de una serie tomando como base el archivo anterior:
 
 ![muchos artículos inicial](./images/severalArticles1.png)
 
@@ -191,10 +183,11 @@ Nos queda para ejemplos posteriores
 - que el layout aproveche más la organización espacial de la página
 - dejar de pensar en valores absolutos (píxeles) y usar valores relativos
 
+TODO: Leer el último artículo padding vs. margin y ver si hace falta aclarar algo.
 
 ## Artículos de interés
 
 - [What is wrong with the CSS Box Model, and how to fix it](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
 - [The CSS Default Box Model is Utter Madness: A Parable | Press Up](https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/)
 - [The CSS Box Model](https://css-tricks.com/the-css-box-model/)
-
+- [Padding vs. Margin](https://uxengineer.com/padding-vs-margin/)
