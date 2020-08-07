@@ -3,8 +3,7 @@ body {
 }
 
 .container {
-  width: 550px;
-  height: 100%;
+  width: 90%;
   box-sizing: border-box;
 }
 
@@ -24,10 +23,14 @@ body {
   padding: 20px;
 }
 
-section {
+article {
   margin: 10px 0px;
 }
 
-section.container {
+article.container {
   margin: 20px auto;
+}
+
+section.estreno {
+  padding: 0 0 10px 0;
 }
