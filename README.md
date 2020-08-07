@@ -19,7 +19,7 @@ Entonces tenemos:
 
 ## Box Model Default y Border-Box
 
-Entonces, si definimos una jerarquía de divs, donde el primero contiene al segundo:
+Si definimos una jerarquía de divs, donde el primero contiene al segundo:
 
 ```html
   <div class="container">
@@ -68,7 +68,7 @@ Lo podemos ver gráficamente:
 
 ![Box model default toma width incluyendo border y padding](./images/boxModelDefault.gif)
 
-Esto es porque el modelo de caja por defecto considera que el elemento tiene su propio tamaño, al cual hay que agregar **el borde** y **el padding**. Esto tiene algunas consecuencias molestas:
+El modelo de caja por defecto considera que el elemento tiene su propio tamaño, al cual hay que agregar **el borde** y **el padding**. Esto tiene algunas consecuencias molestas:
 
 - hay que hacer cálculos a la hora de determinar cuál es el tamaño que queremos para un elemento
 - si en alguna hoja de estilos en cascada el elemento agrega padding o borde, eso trastoca el cálculo que hicimos anteriormente
