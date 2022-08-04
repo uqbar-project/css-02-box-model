@@ -3,7 +3,7 @@
 }
 
 .container {
-  /* o width: 100% con padding */
+  /* o width: 100% con padding, tenemos que ver el box-sizing */
   width: 200px;
   height: 200px;
   background-color: darkblue;

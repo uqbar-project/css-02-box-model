@@ -12,7 +12,8 @@
   border-style: solid;
   border-width: 1px;
   background-color: aquamarine;
-  padding: 20px;
+  /* paso 1 */
+  /* padding: 20px; */
 }
 
 .titulo {
@@ -20,20 +21,12 @@
   background-color: #50EBA7;
   font-size: 20px;
   font-weight: bold;
-  padding: 20px;
-}
-
-article {
-  /* paso 1 - separación de artículos */
-  /* margin: 10px 0px; */
-}
-
-article.container {
-  /* paso 2 - separación del contenedor */
-  /* margin: 10px auto; */
-  /* margin auto -> permite centrar a izquierda y derecha */
+  /* paso 2 */
+  /* padding: 20px; */
 }
 
 section.estreno {
-  padding: 0 0 10px 0;
+  /* paso 3 - separamos la información del estreno y el contenido */
+  /* padding: 0 0 10px 0; */
+  /* padding sigue el orden de las agujas del reloj: 0, 3, 6, 9 hs. */
 }
