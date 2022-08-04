@@ -1,11 +1,23 @@
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
 .container {
-  width: 100%;
+  width: 200px;
   height: 200px;
   background-color: darkblue;
+  color: white;
 }
 
 .cajita {
   width: 180px;
   height: 180px;
-  background-color: blue;
+  background-color: steelblue;
+
+  /* qué pasa con */
+  padding: 15px;
+  /* border-box: incluye el padding y el border */
+  /* box-sizing: border-box; */
+  /* el default */
+  /* box-sizing: content-box; */
 }

@@ -1,5 +1,5 @@
-body {
-  font-family: Roboto;
+* {
+  font-family: 'Albert Sans', sans-serif;
 }
 
 .container {
@@ -28,7 +28,7 @@ article {
 }
 
 article.container {
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 section.estreno {
