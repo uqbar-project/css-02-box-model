@@ -1,3 +1,5 @@
+En [estas diapositivas](https://docs.google.com/presentation/d/1jB15AU8P2LAxg0y9oZ4ZgSHX7trJzcOSwQF7ZlHU6s0/edit?usp=sharing) está la presentación de este ejemplo.
+
 ## El modelo de cajas
 
 Una cuestión fundamental a la hora de maquetar una página web es entender su manejo espacial. Cada elemento define un _layout_ que puede verse gráficamente de la siguiente manera:
@@ -192,6 +194,13 @@ Nos queda para ejemplos posteriores
 
 - que el layout aproveche más la organización espacial de la página
 - dejar de pensar en valores absolutos (píxeles) y usar valores relativos
+
+## Otros ejemplos para entender la diferencia entre padding y margin
+
+El ejemplo trae otras dos carpetas:
+
+- en la carpeta [padding vs. margin](./03-padding-margin/) hay un ejemplo que sirve para marcar que el padding forma parte del elemento y comparte por lo tanto su background-color. El margin está afuera, por lo tanto no toma ningún color. El padding aumenta el tamaño del elemento (es visible si tiene un background color distinto). 
+- en la carpeta [negative margin](./04-negative-margin/) hay un ejemplo de cómo podemos manipular un elemento HTML con un margin negativo para posicionarlo como notificación de mails pendientes de leer. 
 
 ## Resumen: ¿por qué es importante entender el Box Model?
 

@@ -1,0 +1,9 @@
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+button {
+    background-color: darkseagreen;
+    padding: 200px;
+    margin: 50px;
+}

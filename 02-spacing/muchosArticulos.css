@@ -25,7 +25,7 @@
 
 article {
   /* paso 1 - separación de artículos */
-  /* margin: 10px 0px; */
+  margin: 10px 0px;
 }
 
 article.container {
