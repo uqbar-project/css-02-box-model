@@ -197,10 +197,11 @@ Nos queda para ejemplos posteriores
 
 ## Otros ejemplos para entender la diferencia entre padding y margin
 
-El ejemplo trae otras dos carpetas:
+El ejemplo trae otras carpetas:
 
 - en la carpeta [padding vs. margin](./03-padding-margin/) hay un ejemplo que sirve para marcar que el padding forma parte del elemento y comparte por lo tanto su background-color. El margin está afuera, por lo tanto no toma ningún color. El padding aumenta el tamaño del elemento (es visible si tiene un background color distinto). 
 - en la carpeta [negative margin](./04-negative-margin/) hay un ejemplo de cómo podemos manipular un elemento HTML con un margin negativo para posicionarlo como notificación de mails pendientes de leer. 
+- y en la carpeta [collapse margin](./05-collapse-margin/) hay un ejemplo que muestra cómo los márgenes verticales se colapsan para aprovechar mejor el espacio de una página.
 
 ## Resumen: ¿por qué es importante entender el Box Model?
 
