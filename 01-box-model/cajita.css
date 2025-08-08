@@ -2,23 +2,34 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   /* o width: 100% con padding, tenemos que ver el box-sizing */
   width: 200px;
   height: 200px;
   background-color: darkblue;
   color: white;
+  /*
+  Parte 2
+  -- con ésto nos aparece un molesto scrollbar
+  width: 100%;
+  padding: 10px;
+  -- y luego desaparece
+  box-sizing: border-box;
+  */
 }
 
 .cajita {
   width: 180px;
   height: 180px;
   background-color: steelblue;
-
-  /* qué pasa con */
-  padding: 15px;
-  /* border-box: incluye el padding y el border */
+  /* Paso 1, qué pasa con */
+  /* padding: 15px; */
+  /* border: 10px solid red; */
   /* box-sizing: border-box; */
   /* el default */
-  /* box-sizing: content-box; */
+  box-sizing: content-box;
 }
